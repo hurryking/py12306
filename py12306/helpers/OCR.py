@@ -31,8 +31,8 @@ class OCR:
 
     def get_img_position_by_ruokuai(self, img):
         ruokuai_account = Config().AUTO_CODE_ACCOUNT
-        soft_id = '119671'
-        soft_key = '6839cbaca1f942f58d2760baba5ed987'
+        soft_id = '121426'
+        soft_key = '1033017e34594d74b354da89f18717db'
         rc = RKClient(ruokuai_account.get('user'), ruokuai_account.get('pwd'), soft_id, soft_key)
         result = rc.rk_create(img, 6113)
         if "Result" in result:
